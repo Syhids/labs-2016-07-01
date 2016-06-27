@@ -1,3 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal .presenter h1,
+.reveal .presenter h2,
+.reveal .presenter h3,
+.reveal .presenter h4,
+.reveal .presenter h5,
+.reveal .presenter h6 {
+  font-family: "Quicksand", sans-serif;
+}
+
 p > code {
   color: #000;
   background: #fff;
@@ -8,3 +23,30 @@ p > code {
   white-space: nowrap;
 }
 
+
+.feature {
+  float: left;
+  width: 100%;
+  height: 0;
+  overflow: visible;
+}
+.clear {
+  clear: both;
+  margin-top: 60px !important;
+}
+
+.reveal section img.clean {
+  border: 0 none;
+  box-shadow: none;
+}
+
+.reveal section.presenter h1 {
+  font-size: 200%;
+}
+.reveal section.presenter img {
+  display: block;
+  border-radius: 100%;
+  margin: 0 auto;
+  max-height: 220px;
+  background: #fff;
+}

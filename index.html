@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
 		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -25,21 +25,36 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-				Habitissimo Labs
+
+				<section class="habitissimo">
+					Habitissimo Labs
 				</section>
-				<section>
+
+				<section class="presenter">
 					<h1>Desarrollo Ágil</h1>
 					<small>presentado por</small>
-					<h2>Jordi Llull</h2>
+					<img src="/img/BRUCE01.png" alt="Jordi Lull"/>
+					<h4>Jordi Llull</h4>
 				</section>
-				<section>
+
+				<section class="agile">
+					<p>
+Bacon ipsum dolor amet consectetur non esse prosciutto cow. Salami turkey bacon, nulla dolore consequat quis ut pastrami hamburger pork loin. Cillum nisi ground round bacon irure reprehenderit. Capicola voluptate fugiat flank est drumstick doner filet mignon. Voluptate cillum t-bone beef ribs qui, ball tip flank short loin brisket sausage irure magna ipsum strip steak. Filet mignon chicken lorem corned beef. Ex ea excepteur shank pariatur.
+					</p>
+				</section>
+
+				<section class="presenter">
 					<h1>Git &amp; Docker</h1>
 					<small>presentado por</small>
-					<h2>Hugo Chinchilla</h2>
+					<img src="/img/HUGO01.png" alt="Hugo Chinchilla"/>
+					<h4>Hugo Chinchilla</h4>
 				</section>
-				<section>
-					<h1>Git</h1>
+
+				<section class="git">
+					<img src="/img/git-logo.png" class="clean"/>
+				</section>
+
+				<section class="git">
 					<h2>Problemas que soluciona</h2>
 					<ul>
 						<li>compartir código</li>
@@ -48,11 +63,13 @@
 						<li>integración de cambios producidos en paralelo</li>
 					</ul>
 				</section>
-				<section>
-					<h1>Git</h1>
+
+				<section class="git">
+					<img src="/img/git-logo.png" class="clean"/>
 					<h2>en 6 slides</h2>
 				</section>
-				<section>
+
+				<section class="git">
 					<h2>Para iniciar un repositorio</h2>
 					<small>puedes</small>
 					<h3>Crear un nuevo repositorio</h3>
@@ -66,7 +83,8 @@ $ git init
 $ git clone https://github.com/habitissimo/labs-2016-07-01.git
 					</code></pre>
 				</section>
-				<section>
+
+				<section class="git">
 					<h2>workflow</h2>
 					<p>
 						Tu repositorio local consite en 3 "árboles". El primero es tu <code>
@@ -74,10 +92,11 @@ $ git clone https://github.com/habitissimo/labs-2016-07-01.git
 						<code>Index</code>, que sirve como área de ensayo. Y <code>HEAD
 						</code> que apunta a tu último commit
 					</p>
-					<img src="/img/trees.png" alt="git trees"/>
+					<img src="/img/trees.png" alt="git trees" class="clean"/>
 					<small><small>Image from http://rogerdudler.github.io/git-guide/</small></small>
 				</section>
-				<section>
+
+				<section class="git">
 					<h2>add</h2>
 					<p>
 						Cuando modificas un fichero solo estás cambiando su estado dentro de tu
@@ -90,7 +109,8 @@ $ git clone https://github.com/habitissimo/labs-2016-07-01.git
 $ git add &lt;nombre de fichero&gt;
 					</code></pre>
 				</section>
-				<section>
+
+				<section class="git">
 					<h2>commit</h2>
 					<p>
 						Cuando tus cambios sean definitivos y quieras guardarlos harás un
@@ -100,7 +120,8 @@ $ git add &lt;nombre de fichero&gt;
 $ git commit -m "Mensaje del commit"
 					</code></pre>
 				</section>
-				<section>
+
+				<section class="git">
 					<h2>push</h2>
 					<p>
 						Ahora tus cambios se han guardado de forma segura en tu repositorio,
@@ -114,7 +135,8 @@ $ git commit -m "Mensaje del commit"
 $ git push
 					</code></pre>
 				</section>
-				<section>
+
+				<section class="git">
 					<h2>ramas</h2>
 					<p>
 						Las ramas se usan para desarrollar funcionalidades de manera aislada.
@@ -122,20 +144,22 @@ $ git push
 						Crea nuevas ramas durante el desarrollo y fusiónalas con la rama
 						principal cuando termines.
 					</p>
-					<img src="/img/branches.png" alt="git trees"/>
+					<img src="/img/branches.png" alt="git branches" class="clean"/>
 					<small><small>Image from http://rogerdudler.github.io/git-guide/</small></small>
 				</section>
-				<section>
+
+				<section class="git">
 					<p>
 						Más detalles en <strong>git - the simple guide</strong>
 						<i><a href="http://rogerdudler.github.io/git-guide">http://rogerdudler.github.io/git-guide</a></i>
 					</p>
 				</section>
-				<section>
-					<h1>Docker</h1>
+
+				<section class="docker">
+					<img src="/img/docker-logo.png" class="clean" alt="Docker Logo"/>
 				</section>
-				<section>
-					<h1>Docker</h1>
+
+				<section class="docker">
 					<h2>Problemas que soluciona</h2>
 					<ul>
 						<li>compartir <strong>entornos de trabajo</strong></li>
@@ -144,71 +168,102 @@ $ git push
 						<li>desplieges a producción</li>
 					</ul>
 				</section>
-				<section>
+
+				<section class="docker">
 					<h2>Ejemplo:</h2>
 					<p>
 						Vamos a crear una aplicación web
 					</p>
 				</section>
-				<section data-transition="none">
-					<p>¿La web será dinámica?</p>
-					<h2>Dependencias:</h2>
+
+				<section class="docker">
+					<span data-fragment-index="1" class="feature fragment current-visible">¿La web será dinámica?</span>
+					<span data-fragment-index="3" class="feature fragment current-visible">¿Necesitará un almacén de datos?</span>
+					<span data-fragment-index="5" class="feature fragment current-visible">¿Subir imágenes y crear miniaturas?</span>
+					<span data-fragment-index="7" class="feature fragment current-visible">¿Enviar emails con notificaciones?</span>
+					<span data-fragment-index="9" class="feature fragment current-visible">¿Caché?</span>
+					<span data-fragment-index="11" class="feature fragment current-visible">¿Ejecución de tareas asíncronas?</span>
+					<h2 class="clear">Dependencias:</h2>
 					<ul>
-						<li class="fragment">PHP</li>
+						<li data-fragment-index="2" class="fragment">PHP</li>
+						<li data-fragment-index="4" class="fragment">MySQL</li>
+						<li data-fragment-index="6" class="fragment">ImageMagick</li>
+						<li data-fragment-index="8" class="fragment">Exim</li>
+						<li data-fragment-index="10" class="fragment">Redis</li>
+						<li data-fragment-index="12" class="fragment">Beanstalkd</li>
 					</ul>
 				</section>
-				<section data-transition="none">
-					<p>¿Necesitará un almacén de datos?</p>
-					<h2>Dependencias:</h2>
-					<ul>
-						<li>PHP</li>
-						<li class="fragment">MySQL</li>
-					</ul>
+
+				<section class="docker">
+					<p>Mantener un entorno de desarrollo al día en lás máquinas de cada desarrollador puede ser muy complicado</p>
 				</section>
-				<section data-transition="none">
-					<p>¿Subir imágenes y crear miniaturas?</p>
-					<h2>Dependencias:</h2>
-					<ul>
-						<li>PHP</li>
-						<li>MySQL</li>
-						<li class="fragment">ImageMagick</li>
-					</ul>
+
+				<section class="docker">
+					<p>Diferentes sistemas operativos, diferentes versiones de los mismos...</p>
 				</section>
-				<section data-transition="none">
-					<p>¿Enviar emails con notificaciones?</p>
-					<h2>Dependencias:</h2>
-					<ul>
-						<li>PHP</li>
-						<li>MySQL</li>
-						<li>ImageMagick</li>
-						<li class="fragment">Exim</li>
-					</ul>
+
+				<section class="docker">
+					Docker soluciona el problema gracias a la tecnología de contenedores
+					<pre><code data-trim data-noescape class="Dockerfile">
+FROM ubuntu:xenial
+RUN apt-get update -y &amp;&amp; apt-get install apache2 libapache2-mod-php
+ADD apache.con /etc/apache2/apache.conf
+CMD ["apache2", "-DFOREGROUND"]
+					</code></pre>
+					<p>
+						Este fichero crea una imagen de ubuntu, sobre la que instala apache2,
+						php y añade un archivo de configuración propio para apache.
+					</p>
 				</section>
-				<section data-transition="none">
-					<p>¿Caché?</p>
-					<h2>Dependencias:</h2>
-					<ul>
-						<li>PHP</li>
-						<li>MySQL</li>
-						<li>ImageMagick</li>
-						<li>Exim</li>
-						<li class="fragment">Redis</li>
-					</ul>
+
+				<section class="docker">
+					<p>
+						El contenedor resultante se puede ejecutar sobre cualquier linux,
+						independientemente de la distribución (debian, redhat, arch, gentoo...)
+						también sobre OSx y Windows mediante boot2docker.
+					</p>
 				</section>
-				<section data-transition="none">
-					<p>¿Ejecución de tareas asíncronas?</p>
-					<h2>Dependencias:</h2>
-					<ul>
-						<li>PHP</li>
-						<li>MySQL</li>
-						<li>ImageMagick</li>
-						<li>Exim</li>
-						<li>Redis</li>
-						<li class="fragment">Beanstalkd</li>
-					</ul>
+
+				<section class="docker">
+					<h2>Docker-compose</h2>
+					<p>
+						Define los contenedores que forman el entorno de desarrollo,
+						las relaciones entre ellos y las versiones requeridas de cada uno.
+					</p>
+					<p>
+						Crea un flujo de trabajo único para iniciar el entorno de cualquier
+						proyecto, independientemente de las tecnologías que lo componen.
+					</p>
+
+					<pre><code data-trim data-noescape class="bash">
+$ docker-compose up
+					</code></pre>
 				</section>
-				<section>
+
+				<section class="docker">
+					<h3>Anatomía de un entorno de desarrollo</h3>
+					<pre><code data-noescape class="yaml">	# docker-compose.yml
+	web:
+	  image: habitissimo/apache:2.2.4
+	  ports:
+	  	- "5000:5000"
+	  volumes:
+	  	- .:/code
+	  links:
+	  	- redis
+
+	redis:
+	  image: redis:3.1
+					</code></pre>
 				</section>
+
+				<section class="presenter">
+					<h1>Petarlo en tu entrevista de trabajo</h1>
+					<small>presentado por</small>
+					<img src="/img/LIDIA01.png" alt="Lidia Nicolau"/>
+					<h4>Lidia Nicolau</h4>
+				</section>
+
 			</div>
 		</div>
 
