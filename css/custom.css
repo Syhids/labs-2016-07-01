@@ -1,0 +1,10 @@
+p > code {
+  color: #000;
+  background: #fff;
+  padding: 0px 10px !important;
+  border-radius: 10px;
+  font-family: menlo, monospace;
+  font-style: normal;
+  white-space: nowrap;
+}
+
