@@ -50,3 +50,25 @@ p > code {
   max-height: 220px;
   background: #fff;
 }
+
+p.assignment {
+    font-size: 250%;
+}
+
+.assignment .assignment-left {
+    color: #ff7300;
+}
+
+.assignment .assignment-mid {
+    color: #070707;
+}
+
+.assignment .assignment-right {
+    color: #0092D0;
+}
+
+.assignment .assignment-right-alt {
+    background: -webkit-linear-gradient(#d50cff, #0cff1a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
