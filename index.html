@@ -237,30 +237,26 @@
 				<section class="git">
 					<h2>Problemas que soluciona</h2>
 					<ul>
-						<li>compartir código</li>
-						<li>revisión y auditoría del código</li>
-						<li>backups</li>
-						<li>integración de cambios producidos en paralelo</li>
+						<li class="fragment">compartir código</li>
+						<li class="fragment">revisión y auditoría del código</li>
+						<li class="fragment">backups</li>
+						<li class="fragment">integración de cambios producidos en paralelo</li>
 					</ul>
 				</section>
 
 				<section class="git">
-					<img src="img/git-logo.png" class="clean"/>
-					<h2>en 6 slides</h2>
-				</section>
-
-				<section class="git">
 					<h2>Para iniciar un repositorio</h2>
-					<small>puedes</small>
-					<h3>Crear un nuevo repositorio</h3>
-					<pre><code data-trim data-noescape class="bash">
+					<small class="fragment" data-fragment-index="1">puedes</small>
+					<h3 class="fragment" data-fragment-index="1">Crear un nuevo repositorio</h3>
+					<pre class="fragment" data-fragment-index="1"><code data-trim data-noescape class="bash">
 $ cd projects/foo
 $ git init
 					</code></pre>
-					<small>o</small>
-					<h3>Clonar un repositorio</h3>
-					<pre><code data-trim data-noescape class="bash">
+					<small class="fragment" data-fragment-index="2">o</small>
+					<h3 class="fragment" data-fragment-index="2">Clonar un repositorio</h3>
+					<pre class="fragment" data-fragment-index="2"><code data-trim data-noescape class="bash">
 $ git clone https://github.com/habitissimo/labs-2016-07-01.git
+$ cd labs-2016-07-01.git
 					</code></pre>
 				</section>
 
@@ -334,6 +330,25 @@ $ git push
 						<i><a href="http://rogerdudler.github.io/git-guide">http://rogerdudler.github.io/git-guide</a></i>
 					</p>
 				</section>
+
+        <section class="git">
+          <h2>Ventajas a nivel de equipo</h2>
+          <ul>
+            <li class="fragment">Cada línea de código queda asociada con un autor</li>
+            <li class="fragment">Tambien queda asociada a un contexto</li>
+            <li class="fragment">Facilidad de revertir código problemático</li>
+            <li class="fragment">Permite integrar cambios aplicados simultáneamente</li>
+            <li class="fragment">No bloqueante</li>
+          </ul>
+        </section>
+
+        <section class="git">
+          <h2>Ventajas a nivel individual</h2>
+          <ul>
+            <li class="fragment">Permite cambiar rápidamente de contexto</li>
+            <li class="fragment">Experimentos de usar y tirar</li>
+          </ul>
+        </section>
 
 				<section class="docker">
 					<img src="img/docker-logo.png" class="clean" alt="Docker Logo"/>
