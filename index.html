@@ -231,123 +231,177 @@
 				</section>
 
 				<section class="git">
-					<img src="img/git-logo.png" class="clean"/>
+          <section class="git">
+  					<img src="img/git-logo.png" class="clean"/>
+          </section>
+
+          <section class="git">
+            <h2>Problemas que soluciona</h2>
+            <ul>
+              <li class="fragment">compartir código</li>
+              <li class="fragment">revisión y auditoría del código</li>
+              <li class="fragment">backups</li>
+              <li class="fragment">integración de cambios producidos en paralelo</li>
+            </ul>
+          </section>
+
+          <section class="git">
+            <h2>Ventajas a nivel de equipo</h2>
+          </section>
+
+          <section class="git">
+            <h3>Cada línea de código queda asociada con un autor</h3>
+            <img src="img/blame.png" class="clean" alt="git blame on github"/>
+          </section>
+
+          <section class="git">
+            <h3>Y con un contexto</h3>
+            <img src="img/commit.png" class="clean" alt="git blame on github"/>
+          </section>
+
+          <section class="git">
+            <img src="img/commit-2.png" class="clean" alt="git blame on github"/>
+          </section>
+
+          <section class="git">
+            <h3>Deshacer cambios que no han funcionado</h3>
+            <pre><code data-trim data-noescape class="bash">
+$ git revert 87a50ad
+            </code></pre>
+
+            <img src="img/revert.png" class="clean" alt="git blame on github"/>
+          </section>
+
+          <section>
+            <h3>No bloqueante</h3>
+            <pre><code data-trim data-noescape class="bash">
+$ git pull origin foo
+From ssh://github.com/Habitissimo/example
+ * branch            foo        -> FETCH_HEAD
+First, rewinding head to replay your work on top of it...
+            </code></pre>
+            <p class="fragment">
+              Git ha sincronizado mis cambios con los de los otros programadores
+              sin mi intervención.
+            </p>
+          </section>
+
+          <section data-background="img/awesome.jpg">
+            <h1 class="white">Awesome</h1>
+          </section>
+
+          <section class="git">
+            <h2>Ventajas a nivel individual</h2>
+          </section>
+
+          <section class="git">
+            <h3>Cambios de contexto sin fricción</h3>
+          </section>
+
+          <section class="git" data-background="img/interruption.png">
+          </section>
+
+          <section>
+            <h3>Experimentos de usar y tirar</h3>
+            <p class="fragment">Experimenta sin miedo</p>
+            <img class="fragment" class="clean" src="img/furze.jpg" height="400"/>
+            <p class="fragment">si al final no convence, descártalo</p>
+          </section>
+
 				</section>
 
-				<section class="git">
-					<h2>Problemas que soluciona</h2>
-					<ul>
-						<li class="fragment">compartir código</li>
-						<li class="fragment">revisión y auditoría del código</li>
-						<li class="fragment">backups</li>
-						<li class="fragment">integración de cambios producidos en paralelo</li>
-					</ul>
-				</section>
+        <section class="git">
 
-				<section class="git">
-					<h2>Para iniciar un repositorio</h2>
-					<small class="fragment" data-fragment-index="1">puedes</small>
-					<h3 class="fragment" data-fragment-index="1">Crear un nuevo repositorio</h3>
-					<pre class="fragment" data-fragment-index="1"><code data-trim data-noescape class="bash">
+          <section class="git">
+            <h2>Usando Git</h2>
+          </section>
+
+          <section class="git">
+            <h2>Para iniciar un repositorio</h2>
+            <small class="fragment" data-fragment-index="1">puedes</small>
+            <h3 class="fragment" data-fragment-index="1">Crear un nuevo repositorio</h3>
+            <pre class="fragment" data-fragment-index="1"><code data-trim data-noescape class="bash">
 $ cd projects/foo
 $ git init
-					</code></pre>
-					<small class="fragment" data-fragment-index="2">o</small>
-					<h3 class="fragment" data-fragment-index="2">Clonar un repositorio</h3>
-					<pre class="fragment" data-fragment-index="2"><code data-trim data-noescape class="bash">
+            </code></pre>
+            <small class="fragment" data-fragment-index="2">o</small>
+            <h3 class="fragment" data-fragment-index="2">Clonar un repositorio</h3>
+            <pre class="fragment" data-fragment-index="2"><code data-trim data-noescape class="bash">
 $ git clone https://github.com/habitissimo/labs-2016-07-01.git
 $ cd labs-2016-07-01.git
-					</code></pre>
-				</section>
+            </code></pre>
+          </section>
 
-				<section class="git">
-					<h2>workflow</h2>
-					<p>
-						Tu repositorio local consite en 3 "árboles". El primero es tu <code>
-						directorio de trabajo</code>, que contiene los ficheros, el segundo
-						<code>Index</code>, que sirve como área de ensayo. Y <code>HEAD
-						</code> que apunta a tu último commit
-					</p>
-					<img src="img/trees.png" alt="git trees" class="clean"/>
-					<small><small>Image from http://rogerdudler.github.io/git-guide/</small></small>
-				</section>
+          <section class="git">
+            <h2>workflow</h2>
+            <p>
+              Tu repositorio local consite en 3 "árboles". El primero es tu <code>
+              directorio de trabajo</code>, que contiene los ficheros, el segundo
+              <code>Index</code>, que sirve como área de ensayo. Y <code>HEAD
+              </code> que apunta a tu último commit
+            </p>
+            <img src="img/trees.png" alt="git trees" class="clean"/>
+            <small><small>Image from http://rogerdudler.github.io/git-guide/</small></small>
+          </section>
 
-				<section class="git">
-					<h2>add</h2>
-					<p>
-						Cuando modificas un fichero solo estás cambiando su estado dentro de tu
-						directorio de trabajo
-					</p>
-					<p>
-						Puedes pasarlos a tu <code>Index</code> haciendo:
-					</p>
-					<pre><code data-trim data-noescape class="bash">
+          <section class="git">
+            <h2>add</h2>
+            <p>
+              Cuando modificas un fichero solo estás cambiando su estado dentro de tu
+              directorio de trabajo
+            </p>
+            <p>
+              Puedes pasarlos a tu <code>Index</code> haciendo:
+            </p>
+            <pre><code data-trim data-noescape class="bash">
 $ git add &lt;nombre de fichero&gt;
-					</code></pre>
-				</section>
+            </code></pre>
+          </section>
 
-				<section class="git">
-					<h2>commit</h2>
-					<p>
-						Cuando tus cambios sean definitivos y quieras guardarlos harás un
-						<code>commit</code>
-					</p>
-					<pre><code data-trim data-noescape class="bash">
+          <section class="git">
+            <h2>commit</h2>
+            <p>
+              Cuando tus cambios sean definitivos y quieras guardarlos harás un
+              <code>commit</code>
+            </p>
+            <pre><code data-trim data-noescape class="bash">
 $ git commit -m "Mensaje del commit"
-					</code></pre>
-				</section>
+            </code></pre>
+          </section>
 
-				<section class="git">
-					<h2>push</h2>
-					<p>
-						Ahora tus cambios se han guardado de forma segura en tu repositorio,
-						pero solo en tu copia local.
-					</p>
-					<p>
-						Para exportar tus cambios y ponerlos al alcance de otros desarrolladores
-						deberás compartirlos con el repositorio remoto.
-					</p>
-					<pre><code data-trim data-noescape class="bash">
+          <section class="git">
+            <h2>push</h2>
+            <p>
+              Ahora tus cambios se han guardado de forma segura en tu repositorio,
+              pero solo en tu copia local.
+            </p>
+            <p>
+              Para exportar tus cambios y ponerlos al alcance de otros desarrolladores
+              deberás compartirlos con el repositorio remoto.
+            </p>
+            <pre><code data-trim data-noescape class="bash">
 $ git push
-					</code></pre>
-				</section>
+            </code></pre>
+          </section>
 
-				<section class="git">
-					<h2>ramas</h2>
-					<p>
-						Las ramas se usan para desarrollar funcionalidades de manera aislada.
-						La rama master es la rama "por defecto" cuando creas un repositorio.
-						Crea nuevas ramas durante el desarrollo y fusiónalas con la rama
-						principal cuando termines.
-					</p>
-					<img src="img/branches.png" alt="git branches" class="clean"/>
-					<small><small>Image from http://rogerdudler.github.io/git-guide/</small></small>
-				</section>
+          <section class="git">
+            <h2>ramas</h2>
+            <p>
+              Las ramas se usan para desarrollar funcionalidades de manera aislada.
+              La rama master es la rama "por defecto" cuando creas un repositorio.
+              Crea nuevas ramas durante el desarrollo y fusiónalas con la rama
+              principal cuando termines.
+            </p>
+            <img src="img/branches.png" alt="git branches" class="clean"/>
+            <small><small>Image from http://rogerdudler.github.io/git-guide/</small></small>
+          </section>
 
-				<section class="git">
-					<p>
-						Más detalles en <strong>git - the simple guide</strong>
-						<i><a href="http://rogerdudler.github.io/git-guide">http://rogerdudler.github.io/git-guide</a></i>
-					</p>
-				</section>
-
-        <section class="git">
-          <h2>Ventajas a nivel de equipo</h2>
-          <ul>
-            <li class="fragment">Cada línea de código queda asociada con un autor</li>
-            <li class="fragment">Tambien queda asociada a un contexto</li>
-            <li class="fragment">Facilidad de revertir código problemático</li>
-            <li class="fragment">Permite integrar cambios aplicados simultáneamente</li>
-            <li class="fragment">No bloqueante</li>
-          </ul>
-        </section>
-
-        <section class="git">
-          <h2>Ventajas a nivel individual</h2>
-          <ul>
-            <li class="fragment">Permite cambiar rápidamente de contexto</li>
-            <li class="fragment">Experimentos de usar y tirar</li>
-          </ul>
+          <section class="git">
+            <p>
+              Más detalles en <strong>git - the simple guide</strong>
+              <i><a href="http://rogerdudler.github.io/git-guide">http://rogerdudler.github.io/git-guide</a></i>
+            </p>
+          </section>
         </section>
 
 				<section class="docker">

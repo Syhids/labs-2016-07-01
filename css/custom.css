@@ -72,3 +72,8 @@ p.assignment {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
 }
+
+.reveal .white {
+  color: #fff;
+  text-shadow: 2px 2px #000000;
+}
